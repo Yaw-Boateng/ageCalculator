@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(24, 70, 206, 1) 0%, rgba(11, 25, 100, 1) 100%);
+    padding: 10px;
+    color: aliceblue;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculator h1 {
+    font-size: 60px;
+}
+
+.calculator h1 span {
+    color: yellow;
+}
+
+.inputBox {
+    background: linear-gradient(135deg, rgba(242, 244, 250, 1) 0%, rgba(24, 70, 206, 0.8492647058823529) 45%);
+    padding: 10px 100%;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    margin: 40px 0;
+    border-radius: 10px;
+    max-width: 480px;
+}
+
+.inputBox input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    margin-right: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.inputBox button {
+    background: yellow;
+    outline: 0;
+    border: 0;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.inputBox button:hover {
+    transform: scale(1.1); 
+    color:  rgba(24, 70, 206, 0.8492647058823529);
+    font-weight: 500;
+  }
+
+#output span{
+    color: yellow;
+}
+
+#output{
+    font-size: 22px;
+}
+
+
+
+/* Media Query for Mobile View */
+@media (max-width: 680px) {
+    .calculator {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+
+    .calculator h1 {
+        font-size: 40px;
+    }
+
+    .inputBox {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .inputBox input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .inputBox button {
+        width: 100%;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    #output{
+        font-size: 24px;
+    }
+}
